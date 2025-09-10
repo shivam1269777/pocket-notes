@@ -11,7 +11,7 @@ function Signup() {
     const handleSubmit= async(e)=>{
         e.preventDefault()
         try{
-            const response=await axios.post('http://localhost:5000/api/auth/register',{name,email,password});
+            const response=await axios.post('https://pocket-notes-2ia2.onrender.com/api/auth/register',{name,email,password});
             if(response.data.success){
                toast.success("🎉 Signup successful! Please login.");
               navigate("/login")

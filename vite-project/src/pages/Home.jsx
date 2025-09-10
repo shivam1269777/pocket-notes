@@ -21,7 +21,7 @@ const [query,setQuery]=useState("");
   // ✅ Moved fetchNotes outside so it can be reused
 const fetchNotes = async () => {
   try {
-    const { data } = await axios.get("http://localhost:5000/api/note", {
+    const { data } = await axios.get("https://pocket-notes-2ia2.onrender.com/api/note", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`, // ✅ token pass karo
       },
@@ -68,7 +68,7 @@ if (!user) {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/note/add",
+        "https://pocket-notes-2ia2.onrender.com/api/note/add",
         { title, description },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );
@@ -86,7 +86,7 @@ if (!user) {
   const editNote= async(id,title,description)=>{
      try {
       const response = await axios.put(
-        `http://localhost:5000/api/note/${id}`,
+        `https://pocket-notes-2ia2.onrender.com/api/note/${id}`,
         { title, description },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );
@@ -104,7 +104,7 @@ if (!user) {
   const deleteNote=async (id)=>{
       try {
       const response = await axios.delete(
-        `http://localhost:5000/api/note/${id}`,
+        `https://pocket-notes-2ia2.onrender.com/api/note/${id}`,
        
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );
