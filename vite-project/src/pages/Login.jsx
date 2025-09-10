@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import axios from "axios"
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../Context/contextProvider';
+import { useAuth } from '../Context/ContextProvider';
 import { toast } from "react-toastify";
 function Login() {
     const [email,setEmail]=useState("");

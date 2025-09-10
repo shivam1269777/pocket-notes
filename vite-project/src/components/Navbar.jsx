@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../Context/contextProvider";
+import { useAuth } from "../Context/ContextProvider";
 const Navbar = ({setQuery}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 const {user,logout}=useAuth()
