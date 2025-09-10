@@ -6,8 +6,8 @@ import Spinner from "./components/Spinner";
 import { lazy, Suspense } from "react";
 
 const Home = lazy(() => import('./pages/Home.jsx'));
-const Signup = lazy(() => import('./pages/signup.jsx'));
-const Login = lazy(() => import('./pages/login.jsx'));
+const Signup = lazy(() => import('./pages/Signup.jsx'));
+const Login = lazy(() => import('./pages/Login.jsx'));
 
 
 function App() {
