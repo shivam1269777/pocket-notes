@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from "../components/Navbar";
 import axios from 'axios';
 import NoteCard from '../components/NoteCard';
-import { useAuth } from "../Context/contextProvider";
+import { useAuth } from "../Context/ContextProvider";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { lazy, Suspense } from "react";
